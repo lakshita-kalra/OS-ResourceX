@@ -1,0 +1,80 @@
+
+========================================
+       OS ResourceX - OUTPUT TRACES
+========================================
+
+1. CPU SCHEDULING
+
+Sample Processes:
+P1: AT=0, BT=5
+P2: AT=1, BT=3
+P3: AT=2, BT=2
+
+FCFS:
+Average Waiting Time: 3.33
+Average Turnaround Time: 6.67
+
+SJF:
+Average Waiting Time: 3.00
+Average Turnaround Time: 6.33
+
+Round Robin (Time Quantum = 2):
+Average Waiting Time: 4.00
+Average Turnaround Time: 7.33
+
+Priority Scheduling:
+Average Waiting Time: 2.00
+Average Turnaround Time: 4.33
+
+
+2. MEMORY MANAGEMENT
+
+Blocks: 100, 500, 200, 300, 600
+Processes: 212, 417, 112, 426
+
+First Fit:
+Allocated: 741
+Free Memory: 959
+Utilization: 43.59%
+
+Best Fit:
+Allocated: 1167
+Free Memory: 533
+Utilization: 68.65%
+
+Worst Fit:
+Allocated: 741
+Free Memory: 959
+Utilization: 43.59%
+
+
+3. DEADLOCK DETECTION
+
+Algorithm: Banker's Algorithm
+Available Resources: 3, 3, 2
+
+System Status: SAFE
+Safe Sequence:
+P2 -> P4 -> P5 -> P1 -> P3
+
+
+4. DISK SCHEDULING
+
+Disk Size: 200
+Initial Head: 53
+Requests: 98, 183, 37, 122, 14, 124, 65, 67
+
+FCFS: 640 tracks
+SSTF: 236 tracks
+SCAN: 331 tracks
+C-SCAN: 382 tracks
+
+
+5. PERFORMANCE ANALYSIS
+
+Best Disk Scheduling Algorithm: SSTF
+Total Head Movement: 236 tracks
+
+========================================
+             END OF OUTPUT TRACES
+========================================

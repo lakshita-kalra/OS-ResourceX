@@ -1,0 +1,41 @@
+
+{
+  "cpu_scheduling": {
+    "processes": [
+      {"pid": "P1", "arrival_time": 0, "burst_time": 5, "priority": 2},
+      {"pid": "P2", "arrival_time": 1, "burst_time": 3, "priority": 1},
+      {"pid": "P3", "arrival_time": 2, "burst_time": 2, "priority": 3}
+    ],
+    "algorithms": ["FCFS", "SJF", "Round Robin", "Priority"],
+    "time_quantum": 2
+  },
+  "memory_management": {
+    "blocks": [100, 500, 200, 300, 600],
+    "processes": [212, 417, 112, 426],
+    "algorithms": ["First Fit", "Best Fit", "Worst Fit"]
+  },
+  "deadlock": {
+    "allocation": [
+      [0, 1, 0],
+      [2, 0, 0],
+      [3, 0, 2],
+      [2, 1, 1],
+      [0, 0, 2]
+    ],
+    "maximum": [
+      [7, 5, 3],
+      [3, 2, 2],
+      [9, 0, 2],
+      [2, 2, 2],
+      [4, 3, 3]
+    ],
+    "available": [3, 3, 2]
+  },
+  "disk_scheduling": {
+    "disk_size": 200,
+    "initial_head": 53,
+    "requests": [98, 183, 37, 122, 14, 124, 65, 67],
+    "direction": "Right",
+    "algorithms": ["FCFS", "SSTF", "SCAN", "C-SCAN"]
+  }
+}
